@@ -1,0 +1,28 @@
+Reflections on project 1
+
+Might be better to lower mask below horizon line, (see steps_whiteCarLaneSwitch0.jpg)
+
+Things to try out:
+	Equalization:
+	http://docs.opencv.org/3.1.0/d5/daf/tutorial_py_histogram_equalization.html
+Equalization before of after blur?
+To mask or to complete image?
+
+After equualization:
+	Image sharpens, see above questions as to no overfit
+	"Less is more"
+
+
+Moified mask polygon, from 300->310, Using equalize (steps_whiteCarLaneSwitch1)
+
+Change low_threshold 50->60 high_threshold 150->200 ()
+
+After ffmpg error
+From Python console, I have typed following and it worked
+import imageio
+imageio.plugins.ffmpeg.download()
+
+
+
+https://carnd-forums.udacity.com/display/CAR/questions/26218840/answers/29494171
+http://stackoverflow.com/questions/36598897/python-and-opencv-improving-my-lane-detection-algorithm

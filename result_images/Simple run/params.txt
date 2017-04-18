@@ -1,0 +1,18 @@
+##Parameters
+###Blur
+kernel_size=3
+###Cany
+low_threshold = 50
+high_threshold = 150
+##Hough Space
+rho=2
+theta=np.pi/90
+threshold=30
+min_line_len=10
+max_line_gap=2
+
+vertices = np.array([[(150,540),(450,300),(510,300),(930,540)]],dtype=np.int32)
+
+#6.-Hough space
+    line_img=hough_lines(masked,rho,theta,threshold,min_line_len,max_line_gap)
+
